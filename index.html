@@ -15,57 +15,59 @@
 <body>
   <header>
     <img src="img/hero.jpg" alt="hero image">
-    <h3>acme</h3>
-    <div>
-      <h4>Home</h4>
-      <h4>Blog</h4>
+    <div class="navbar split-between">
+      <h3 class="sans">acme</h3>
+      <div class="navbar__pages split-between">
+        <h4>Home</h4>
+        <h4>Blog</h4>
+      </div>
     </div>
   </header>
 
   <section class="container hero flow-content-large">
-    <p>Lorem ipsum dolor sit amet, consectet  adipiscing</p>
-    <p>Lorem ipsum dolor sit amet, consectet  adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+    <p class="heading-large">Lorem ipsum dolor sit amet, consectet  adipiscing</p>
+    <p class="heading-medium">Lorem ipsum dolor sit amet, consectet  adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
     <a class="btn" href="#">Connect&nbsp;&nbsp;&nbsp;></a>
   </section>
 
   <section class="container about">
     <h4 class="title">About</h4>
     <div class="flow-content-large">
-      <p>Lorem ipsum dolor sit amet, consectet  adipiscing elit, sed do eiusmod tempor incididunt ut labore dolore magna sed do amet.</p>
-      <p>Lorem ipsum dolor sit amet, consectet  adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna. Lorem ipsum dolor sit amet, consectet  adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+      <p class="heading-small">Lorem ipsum dolor sit amet, consectet  adipiscing elit, sed do eiusmod tempor incididunt ut labore dolore magna sed do amet.</p>
+      <p class="heading-small">Lorem ipsum dolor sit amet, consectet  adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna. Lorem ipsum dolor sit amet, consectet  adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
     </div>
   </section>
 
   <section class="container blog ">
     <h4 class="title">Blog</h4>
     <div class="flow-content-large">
-      <p>Latest thoughts, news and ideas</p>
-      <div>
+      <p class="heading-medium">Latest thoughts, news and ideas</p>
+      <div class="split">
         <div class="card flow-content-small">
           <img src="img/blog-1.jpg" alt="drill doodle">
-          <p>Lorem ipsum dolor sit amet, consectet  adipiscing</p>
-          <p>Lorem ipsum dolor sit amet, consectet  adipiscing</p>
-          <div>
-            <p>Oct 8</p>
-            <p>8 min read</p>
+          <p class="heading-small">Lorem ipsum dolor sit amet, consectet  adipiscing</p>
+          <p class="text-large sans">Lorem ipsum dolor sit amet, consectet  adipiscing</p>
+          <div class="split-start sans">
+            <p class="text-small">Oct 8</p>
+            <p class="text-small">8 min read</p>
           </div>
         </div>
         <div class="card flow-content-small">
           <img src="img/blog-1.jpg" alt="drill doodle">
-          <p>Lorem ipsum</p>
-          <p>Lorem ipsum dolor sit amet, consectet  adipiscing</p>
-          <div>
-            <p>Oct 8</p>
-            <p>8 min read</p>
+          <p class="heading-small">Lorem ipsum</p>
+          <p class="text-large sans">Lorem ipsum dolor sit amet, consectet  adipiscing</p>
+          <div class="split-start sans">
+            <p class="text-small">Oct 8</p>
+            <p class="text-small">8 min read</p>
           </div>
         </div>
         <div class="card flow-content-small">
           <img src="img/blog-1.jpg" alt="drill doodle">
-          <p>Lorem ipsum dolor sit amet, consectet  adipiscing</p>
-          <p>Lorem ipsum dolor sit amet, consectet  adipiscing</p>
-          <div>
-            <p>Oct 8</p>
-            <p>8 min read</p>
+          <p class="heading-small">Lorem ipsum dolor sit amet, consectet  adipiscing</p>
+          <p class="text-large sans">Lorem ipsum dolor sit amet, consectet  adipiscing</p>
+          <div class="split-start sans">
+            <p class="text-small">Oct 8</p>
+            <p class="text-small">8 min read</p>
           </div>
         </div>
       </div>
@@ -75,41 +77,42 @@
   <section class="container inbox">
     <h4 class="title">Inbox</h4>
     <div class="flow-content-large">
-      <h4>Knowledge letters</h4>
+      <h4 class="heading-medium">Knowledge letters</h4>
       <img src="img/newsletter.jpg" alt="newsletter image">
-      <div class="flow-content-small">
-        <div>
-          <p>Name</p>
+      <div class="split inbox__form">
+        <div class="inbox__input">
+          <p class="text-small">Name</p>
           <input placeholder="Your Name" type="text"/>
         </div>
-        <div>
-          <p>Email</p>
+        <div class="inbox__input">
+          <p class="text-small">Email</p>
           <input placeholder="example@domain.com" type="email"/>
         </div>
+        <a class="btn inbox__button" href="#">Subscribe&nbsp;&nbsp;&nbsp;></a>
       </div>
-      <a class="btn" href="#">Subscribe&nbsp;&nbsp;&nbsp;></a>
     </div>
   </section>
 
-  <section class="container footer">
+  <section class="container footer split-between">
       <h3>acme</h3>
+    <div class="split footer__links">
       <div class="flow-content-small">
-        <p>Map</p>
-        <p>Blog</p>
-        <p>Privacy</p>
+        <p class="text-large">Map</p>
+        <h3>Blog</h3>
+        <h3>Privacy</h3>
       </div>
       <div class="flow-content-small flow-content-small">
-        <p>Resources</p>
-        <p>Courses</p>
-        <p>Hacks</p>
-        <p>Free Stuff</p>
+        <p class="text-large">Resources</p>
+        <h3>Courses</h3>
+        <h3>Hacks</h3>
+        <h3>Free Stuff</h3>
       </div>
     </div>
     </section>
     
-    <section class="container legal">
+    <section class="container legal text-medium split-between">
       <p>&copy; 2024 acme. All rights reserved</p>
-      <div>
+      <div class="split legal__social">
         <p>Yt</p>
         <p>Tw</p>
         <p>Fb</p>
